@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.Random;
 
 public class Main {
-        //ZADANIE 1
+
 
         public static Random rand() {
             return new Random();
