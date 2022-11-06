@@ -4,40 +4,26 @@ import java.lang.reflect.Array;
 import java.util.Random;
 
 public class Main {
+    //ZADANIE 2
+    public static void main(String[] args) {
+        tablica1();
+    }
 
 
-        public static Random rand() {
-            return new Random();
+
+
+
+
+    public static void tablica1(){
+        int tab[]= new int[]{1,2,3 ,4 ,5 ,6 ,7, 8, 9, 10, 11,12};
+        String tab1[]=new String[]{"Auto", "Pies", "Woda", "Kawa", "Kosa"};
+        for (int i=1;i< tab.length;i+=2){
+            System.out.println(tab[i]);
         }
-
-        public static void main(String[] args) {
-            sumAndAvgElements(createRandom(100));
+        for (int i=1;i< tab1.length;i+=2){
+            System.out.println(tab1[i]);
         }
-
-        public static void sumAndAvgElements(int[] arr) {
-            int sum = 0;
-            for (int elem : arr) {
-                sum += elem;
-            }
-            int avg = sum / arr.length;
-            System.out.println("Suma elementow tablicy wynosi: " + sum);
-            System.out.println("Średnia elementów tablicy wynosi: " + avg);
-        }
-
-        public static int[] createRandom(int a) {
-            int[] arr = new int[10];
-            for (int i = 0; i < 10; i++ ) {
-                arr[i] = rand().nextInt(a);
-            }
-//            for (int i=0;i<arr.length;i++){
-//                arr[i]=rand().nextInt(a);
-//            }
-            return arr;
-        }
-
-
-
-
+    }
 
     public static int getInt(){
         return new Scanner(System.in).nextInt();
